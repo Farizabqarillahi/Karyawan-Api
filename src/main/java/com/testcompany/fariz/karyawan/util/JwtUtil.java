@@ -19,7 +19,7 @@ public class JwtUtil {
     @Value("${jwt.secret}")
     private String secretKey;
 
-    @Value("${jwt.expiration}")
+    @Value("${jwt.expiration}") // 1 jam
     private long expirationTime;
 
     public String generateToken(String username) throws JOSEException {
